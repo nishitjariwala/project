@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:400i");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+body
+{
+    background: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)) ,url('wall-wallpaper.jpg');
+    font-family: ;
+    color: black;
+}
+/* preloader*/
+.preloader
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: white;
+    z-index: 999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+/*end of preloader*/
+.header
+{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}/*
+@media screen and (min-width:768px)
+{
+    .header{
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('PexelsVideos2835.gif');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+}*/
+@media screen and (max-width:768px)
+{
+    .header{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('coffee_img.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .nav
+    {
+        width: 50%;
+    }
+}
+/* banner */
+.banner
+{
+    text-align: center;
+    z-index: 3;
+}
+.banner_title
+{
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: yellow;
+}
+@media screen and (min-width:768px)
+{
+    .banner_title
+    {
+        font-size: 9rem;
+    }
+    .nav--
+    {
+        width: 768px;
+    }
+}
+.banner_social-icon
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border: 0.1rem solid white;
+    border-radius: 50%;
+    padding: 0.25rem;
+    transition: all 0.5s linear;
+}
+.banner_social-icon:hover
+{
+    background: yellow;
+    color: black;
+}
+.banner_icon
+{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2rem 2rem 2rem 2rem; 
+    grid-column-gap: 0.5rem;
+    justify-content: center;
+
+}
+/*video*/
+.video_container
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+.video_item
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/*nav butten*/
+.navbtn
+{
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    font-size: 3.5rem;
+    color: yellow;
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s ;
+    animation-iteration-count: infinite;
+}
+/*nav buttons animation*/
+@keyframes pulse
+{
+    0%{transform: scale(1);}
+    50%{transform: scale(1.5);}
+    100%{transform: scale(1);}
+
+}
+/*NAV*/
+.nav
+{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 10rem;
+    background: #bb9457;
+    z-index: 3;
+}
+/*nav*/
+.nav
+{
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+.nav--show
+{
+    width: 10rem;
+
+}
+@media screen and (max-width:768px)
+{
+    .nav--show
+    {
+        width: 80%;
+    }
+}
+.logo
+{
+    height: 7rem;
+    width: auto;
+    margin-left: 23px;
+}
+.nav_links
+{
+    list-style-type: none;
+}
+.nav_single-links
+{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(46, 18, 18);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: 0.45s ease-in-out;
+}
+.nav_single-links:hover
+{
+    background: rgb(46, 18, 18);
+    color: yellow;
+    padding-left: 1.5rem;
+}
+.nav_logo:hover
+{
+    background:#bb9457;
+    color: yellow;
+    padding-left: 1.5rem;
+/*    font-family: */
+}
+
+
+/*style for about*/
+
+
+.about
+{
+    margin-top: 70px;
+    text-decoration: underline wavy yellow;
+    background-attachment: 	scroll;/*
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('background_about.jpg');
+    height: 110vh;
+    background-size: cover;*/ 
+}
+/*style for heading*/
+.about h1.heading
+{
+    margin-left: 11%;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4.5rem;
+    color: blueviolet;
+}
+
+/*style for containt*/
+.containt1
+{
+    margin-left: 11%;
+
+    width: 89%;
+    height: 200px;
+    margin-top: 20px;
+}
+.first_image
+{
+    position: absolute;
+    height: 170px;
+    width: 500px;
+}
+.subcontaint1
+{
+    position: absolute;
+    margin-right: 20px;
+
+    margin-left: 550px;
+}
+.cont
+{
+    font-size: 1.5rem;
+    color: red;
+    text-align: justify;
+}
+.second_image
+{
+    position: absolute;
+    height: 150px;
+    width: 500px;
+    margin-left: 700px;
+}
+.subcontaint2
+{
+    position: absolute;
+    margin-left: 0px;
+    
+}
+@media screen and (max-width: 1350px) and (min-width:860px)
+{
+    .containt1
+    {
+        height: 200px;
+    }
+    .cont
+    {
+        font-size: 1.2rem;
+    }
+    .first_image
+    {
+        width: 300px;
+    }
+    .subcontaint1
+    {
+        margin-left: 400px;
+    }
+    .subcontaint2
+    {
+        width: 400px;
+    }
+    .second_image
+    {
+        margin-left: 450px;
+        width: 300px;
+    }
+}
+@media screen and (max-width:860px) and (min-width:600px)
+{
+    .cont
+    {
+        font-size: 1.2rem;
+    }
+    .containt1
+    {
+        height: 400px;
+    }
+    .subcontaint2
+    {
+        margin-right: 20%;
+
+    }
+    .subcontaint1
+    {
+        
+        margin-left: 0px;
+        margin-top: 200px; 
+    }
+    .first_image
+    {
+        margin-left: 100px;
+        width: 300px;
+        text-align: center;
+    }
+    .image2
+    {
+        margin-left: 100px;
+    }
+    .second_image
+    {
+        
+        margin-left: 0px;
+        width: 300px;
+    }
+    .subcontaint2
+    {
+
+        margin-left: 0px;
+        margin-top: 200px; 
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .cont
+    {
+        font-size: 1.2rem;
+    }
+    .containt1
+    {                                      
+        height: 480px;
+    }
+    .subcontaint1
+    {
+        margin-right: 20%;
+        margin-left: 0px;
+        margin-top: 200px; 
+    }
+    .first_image
+    {
+        width: 300px;
+        text-align: center;
+    }
+    .image2
+    {
+    }
+    .second_image
+    {
+        
+        margin-left: 0px;
+        width: 300px;
+    }
+    .subcontaint2
+    {
+        width: 300px;
+        margin-left: 0px;
+        margin-top: 200px; 
+    }
+}
+
+/*@media screen and (min-width:768px;)
+{
+    .cont
+    {
+        font-size: 1rem;
+    }
+    .containt1
+    {
+        height: 400px;
+    }
+    .subcontaint1
+    {
+        width: 700px;
+        margin-left: 0px;
+        margin-top: 200px; 
+    }
+    .first_image
+    {
+           width: 700px;
+    }
+    .second_image
+    {
+        width: 700px;
+        margin-left: 0px;
+    }
+    .subcontaint2
+    {
+        width: 700px;
+        margin-left: 0px;
+        margin-top: 200px; 
+    }
+}*/
+/*Style For Gallery*/
+.gallery_background
+{
+    background: url(background_gallery.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover; 
+}
+.gallery
+{
+    margin-left: 11%;
+    width: 79%;
+    margin-right: 10%;
+    height: 100vh;
+   
+
+}
+.carousel-inner
+{
+    text-align: center;
+    height: 500px;
+    width: 700px;
+    margin-top: 70px;
+}
+.gallery h1.heading
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4.5rem;
+    color: blueviolet;
+}

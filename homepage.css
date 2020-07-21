@@ -1,0 +1,132 @@
+.body
+{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('Pexels Videos 2835.mp4');
+    height: 100vh;
+    background-size: cover;
+}
+.video_container
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+.video_item
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.logo
+{
+    position: absolute;
+}
+.logo_image
+{
+    height: 200px;
+}
+.heading_content
+{
+    font-size: 150px;
+    
+    margin-top: 0px;
+    text-align: center;
+    color: yellow;
+  /*  position: absolute;*/
+}
+.heading
+{
+    text-align: center;
+}
+.logo1
+{
+    display: none;
+}
+.main
+{
+    height: 300px;
+   /* position: absolute;*/
+
+}
+.animation1
+{
+    animation: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /*  animation: colorchange 1s infinite;*/
+}
+@keyframes colorchange
+{
+    0%{ color: tomato;}
+    50%{color: white;}
+    100%{color: green;}
+}
+.enter_website
+{
+    margin-top: -300px;
+    text-align: center;
+
+}
+.enter
+{
+    font-size: 100px;
+    cursor: pointer;
+    margin-top: 300px;
+    padding: 50px;
+    background: yellow;
+    border-radius: 5rem;
+
+}
+.enter:hover{
+    background: black;
+    text-decoration: underline;
+    color: yellow;
+}
+.remark
+{
+    color: yellow;
+}
+@media screen and (max-width: 950px)
+{
+    .logo_image{
+        height: 100px;
+    }
+    .heading_content
+    {
+        font-size: 100px;
+    }
+    .enter
+    {
+        font-size: 50px;
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 650px)
+{
+    .heading_content
+    {
+        font-size: 75px;
+
+    }
+    .main
+    {
+        position: relative;
+        display: block;
+    }
+    .logo1
+    {
+        display: inline;
+    }
+    .logo
+    {
+        display: none;
+    }
+    .logo_image
+    {
+        height: 150px;
+    }
+    .enter
+    {
+        margin-top: 300px;
+    }
+}
